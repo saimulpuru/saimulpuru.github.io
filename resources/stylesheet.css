@@ -1,0 +1,10 @@
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#screen {
+    display: block;
+    position: fixed;
+    background-color: aqua;
+}
