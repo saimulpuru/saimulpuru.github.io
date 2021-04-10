@@ -1,9 +1,0 @@
-{
-    "moduleName" : "Phase 1 Scenario",
-    "process" : [
-        [{"modalText" : "Scan Location #AMX22390 and press k to confirm"}, {"PassScenarioArray" : ["#AMX2239"]}],
-        [{"modalText" : "Scan the individual boxes in the location and press k to confirm"}, {"PassScenarioArray" : ["#B80115000", "#B80115001", "#B80115002", "#B80115003", "#B80115004"]}],
-        [{"modalText" : "Scan the Location #AMG4158 and press k to confirm"}, {"PassScenarioArray" : ["#AMG4158"]}],
-        [{"modalText" : "Scan the Palete #P70226000 and press k to confirm"}, {"PassScenarioArray" : ["#P70226000"]}]
-    ]
-}
