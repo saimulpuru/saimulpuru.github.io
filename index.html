@@ -142,6 +142,30 @@
 <body>
   <div id="card">
     <!-- All you need to put beautiful, interactive 3D content on your site: -->
+    <model-viewer src="../../assets/Chair.glb" poster="../../assets/Chair.png" shadow-intensity="1" ar ar-scale="fixed" camera-controls alt="A 3D model carousel">
+  
+  <button slot="ar-button" id="ar-button">
+    View in your space
+  </button>
+
+  <div id="ar-prompt">
+    <img src="../../assets/hand.png">
+  </div>
+
+  <div class="slider">
+    <div class="slides">
+      <button class="slide selected" onclick="switchSrc(this, 'Chair')" style="background-image: url('../../assets/Chair.png');">
+
+      </button><button class="slide" onclick="switchSrc(this, 'Mixer')" style="background-image: url('../../assets/Mixer.png');">
+
+      </button><button class="slide" onclick="switchSrc(this, 'GeoPlanter')" style="background-image: url('../../assets/GeoPlanter.png');">
+      
+      </button><button class="slide" onclick="switchSrc(this, 'ToyTrain')" style="background-image: url('../../assets/ToyTrain.png');">
+      
+      </button><button class="slide" onclick="switchSrc(this, 'Canoe')" style="background-image: url('../../assets/Canoe.png');">    
+    </button></div>
+  </div>
+</model-viewer>
     <model-viewer src="https://cdn.glitch.com/2cde8438-4bfd-464e-b2a0-3ed1f9959ff7%2FCottage%20(3).glb?v=1618234840727"
                   
                   alt="A 3D model of an cottage"
@@ -184,30 +208,7 @@
                   autoplay
                   auto-rotate ar>
     </model-viewer>
-   <model-viewer src="../../assets/Chair.glb" poster="../../assets/Chair.png" shadow-intensity="1" ar ar-scale="fixed" camera-controls alt="A 3D model carousel">
-  
-  <button slot="ar-button" id="ar-button">
-    View in your space
-  </button>
-
-  <div id="ar-prompt">
-    <img src="../../assets/hand.png">
-  </div>
-
-  <div class="slider">
-    <div class="slides">
-      <button class="slide selected" onclick="switchSrc(this, 'Chair')" style="background-image: url('../../assets/Chair.png');">
-
-      </button><button class="slide" onclick="switchSrc(this, 'Mixer')" style="background-image: url('../../assets/Mixer.png');">
-
-      </button><button class="slide" onclick="switchSrc(this, 'GeoPlanter')" style="background-image: url('../../assets/GeoPlanter.png');">
-      
-      </button><button class="slide" onclick="switchSrc(this, 'ToyTrain')" style="background-image: url('../../assets/ToyTrain.png');">
-      
-      </button><button class="slide" onclick="switchSrc(this, 'Canoe')" style="background-image: url('../../assets/Canoe.png');">    
-    </button></div>
-  </div>
-</model-viewer>
+   
 
 <script type="module">
   const modelViewer = document.querySelector("model-viewer");
