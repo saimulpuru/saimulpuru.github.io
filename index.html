@@ -78,15 +78,15 @@
 
   <div class="slider">
     <div class="slides">
-      <button class="slide selected" onclick="switchSrc(this, 'Chair')" style="background-image: url('../../assets/ShopifyModels/Chair.png');">
+      <button class="slide selected" onclick="switchSrc(this, 'Chair')" style="background-image: url('../../assets/Chair.png');">
 
-      </button><button class="slide" onclick="switchSrc(this, 'Mixer')" style="background-image: url('../../assets/ShopifyModels/Mixer.png');">
+      </button><button class="slide" onclick="switchSrc(this, 'Mixer')" style="background-image: url('../../assets/Mixer.png');">
 
-      </button><button class="slide" onclick="switchSrc(this, 'GeoPlanter')" style="background-image: url('../../assets/ShopifyModels/GeoPlanter.png');">
+      </button><button class="slide" onclick="switchSrc(this, 'GeoPlanter')" style="background-image: url('../../assets/GeoPlanter.png');">
       
-      </button><button class="slide" onclick="switchSrc(this, 'ToyTrain')" style="background-image: url('../../assets/ShopifyModels/ToyTrain.png');">
+      </button><button class="slide" onclick="switchSrc(this, 'ToyTrain')" style="background-image: url('../../assets/ToyTrain.png');">
       
-      </button><button class="slide" onclick="switchSrc(this, 'Canoe')" style="background-image: url('../../assets/ShopifyModels/Canoe.png');">    
+      </button><button class="slide" onclick="switchSrc(this, 'Canoe')" style="background-image: url('../../assets/Canoe.png');">    
     </button></div>
   </div>
 </model-viewer>
@@ -95,7 +95,7 @@
   const modelViewer = document.querySelector("model-viewer");
 
   window.switchSrc = (element, name) => {
-    const base = "../../assets/ShopifyModels/" + name;
+    const base = "../../assets/" + name;
     modelViewer.src = base + '.glb';
     modelViewer.poster = base + '.png';
     const slides = document.querySelectorAll(".slide");
@@ -226,8 +226,8 @@
 </style>
     <section class="attribution">
       <span>
-        <h1>Astronaut</h1>
-        <span>By <a href="https://poly.google.com/view/dLHpzNdygsg" target="_blank">Poly</a></span>
+        <h1>AR Demos</h1>
+        <span>By <a href="https://saimulpuru.portfoliobox.net/" target="_blank">Sai Mulpuru</a></span>
       </span>
       <a class="cc" href="https://creativecommons.org/licenses/by/2.0/" target="_blank">
         <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg">
@@ -240,9 +240,7 @@
   <footer>
     <span>This page is a basic demo of the <a href="https://github.com/GoogleWebComponents/model-viewer" target="_blank">&lt;model-viewer&gt;</a> web component.</span>
     <span>It makes displaying 3D and AR content on the web easy ✌️</span>
-    <a href="https://glitch.com/edit/#!/remix/model-viewer">
-      <img src="https://cdn.glitch.com/2bdfb3f8-05ef-4035-a06e-2043962a3a13%2Fremix%402x.png?1513093958726" alt="remix button" aria-label="remix" height="33">
-    </a>
+    
   </footer>
   
   
