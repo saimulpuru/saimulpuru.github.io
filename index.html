@@ -246,7 +246,7 @@
    	 </section>
    
    
-    <model-viewer src="https://cdn.glitch.com/2cde8438-4bfd-464e-b2a0-3ed1f9959ff7%2FAxe.glb?v=1620669451713" 
+    <model-viewer href="#test1" src="https://cdn.glitch.com/2cde8438-4bfd-464e-b2a0-3ed1f9959ff7%2FAxe.glb?v=1620669451713" 
                   alt="A 3D model of a n axe"
                   shadow-intensity="1"
                   camera-controls ar
@@ -310,7 +310,7 @@
         alt="A 3D model of some wall art"
       ></model-viewer>
 	  -->
-<script type="module">
+<script type="module" href="#test2">
   const modelViewer = document.querySelector("model-viewer");
 
   window.switchSrc = (element, name) => {
@@ -327,7 +327,7 @@
     ev.preventDefault();
   });
 </script>
- <section class="attribution">
+ <section class="attribution" href="#test3">
       <span>
         <h1>First 360 Video of Himalayas - Spiti Valley and Rishikesh</h1>
         
