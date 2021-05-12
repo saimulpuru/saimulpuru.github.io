@@ -94,6 +94,7 @@
     text-align: center;
     overflow: hidden;
     position: absolute;
+    left: 05%;
     bottom: 16px;
   }
 
@@ -174,13 +175,25 @@ position:relative;
 }
 
 a { color: inherit; } 
-	    
+
+.daudio {
+  position: relative;
+  left: 30px;
+}
+
+.daudio audio {
+  padding: 10px;
+  padding-bottom: 10px;
+}
+
 </style>
   </head> 
 <body>
 	
-  <div id="card">
-	  <section class="attribution" id="#artifacts">
+  <div id="card"> 
+    
+    </section>
+	  <section class="attribution" id="artifacts">
       <span>
         <h1>ARtifacts can be visualised on your table or floor!</h1>
        
@@ -218,7 +231,7 @@ a { color: inherit; }
     </div>
   </div>
 </model-viewer>
-  <section class="attribution" id="#architecture">
+  <section class="attribution" id="architecture">
       <span>
         <h1>ARchitecture - Take a walk around this old cottage</h1>
        
@@ -233,7 +246,7 @@ a { color: inherit; }
                   ar-modes="scene-viewer webxr quick-look"
                   autoplay>
     </model-viewer>
-	<section class="attribution" id="#florafauna">
+	<section class="attribution" id="florafauna">
       <span>
         <h1>Flora and Fauna - Bring trees inside your home!</h1>
        
@@ -248,7 +261,7 @@ a { color: inherit; }
                   ar-modes="scene-viewer webxr quick-look"
                   autoplay>
     </model-viewer>
-	   <section class="attribution" id="#wildlife">
+	   <section class="attribution" id="wildlife">
       <span>
         <h1>Wildlife showcased in AR. Record a video !</h1>
        
@@ -264,7 +277,7 @@ a { color: inherit; }
                  camera-orbit="-2.254deg 81.76deg 0.1792m" min-camera-orbit="auto auto auto" max-camera-orbit="auto auto 0.1792m">
       
        </model-viewer>
-     <section class="attribution" id="#weapons">
+     <section class="attribution" id="weapons">
       <span>
         <h1>See Ancient Weapons in 3D and place it on your table!</h1>
        
@@ -280,7 +293,7 @@ a { color: inherit; }
                   ar-modes="scene-viewer webxr quick-look" >
 		  
     </model-viewer>
-	  <section class="attribution" id="#heritage">
+	  <section class="attribution" id="heritage">
       <span>
         <h1>Bringing life into Old photographs of Kodavas</h1>
        
@@ -357,7 +370,7 @@ a { color: inherit; }
   <div class="instagram">
     <a href="https://www.instagram.com/ar/141479391233152/?ch=ZGEwODQ1NTllY2EwOWRjZTM2Yzc4NTdkNDM5MmJjNjg%3D">Try AR filter in IG</a> 
   </div>
- <section class="attribution" id="#himalayas">
+ <section class="attribution" id="himalayas">
       <span>
         <h1>First 360 Video of Himalayas - Spiti Valley and Rishikesh</h1>
         
@@ -365,39 +378,32 @@ a { color: inherit; }
      
     </section>
 <iframe width="auto" height="444" src="https://www.youtube.com/embed/yONiqJRXNCk?list=PLLEl6O4qtSo5OMhLKScUtn5PfeLutQWUh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<section class="attribution" id="#hampi">
+<section class="attribution" id="hampi">
       <span>
         <h1>Virtual tour of Hampi's Historical Architecture</h1>
       </span>
      
     </section>
 <iframe width="auto" height="444" src="https://www.youtube.com/embed/RXJ_9-Lvyv4?list=PLLEl6O4qtSo5OMhLKScUtn5PfeLutQWUh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<section class="attribution" id="#holi">
+<section class="attribution" id="holi">
       <span>
         <h1>Holi Festival in Vrindavan, 2016</h1>    
       </span>
      
     </section>	  
 <iframe width="auto" height="444" src="https://www.youtube.com/embed/6drV60HlQ-8?list=PLLEl6O4qtSo5OMhLKScUtn5PfeLutQWUh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<section class="attribution" id="#storykids">
+<section class="attribution" id="storykids">
       <span>
         <h1>A cloud of Trash, 360 Video Story for Kids</h1>    
       </span>
-     
-    </section>	  
-<iframe width="auto" height="444" src="https://www.youtube.com/embed/t1feMpbr1w8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      
-        <h1>Sounds of a foggy morning in Avalahalli</h1>  
-	  <h3>(Use headphones for a better experience)</h3>
-	  
-       
-      <audio controls>
-         <source src = "/assets/mornings.mp3" type = "audio/mpeg">
-      </audio>
-     
-    
-    
-    
+    </section>
+    <iframe width="auto" height="444" src="https://www.youtube.com/embed/t1feMpbr1w8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <section class="daudio" id="sound"">
+      <h1>Sounds of a foggy morning in Avalahalli</h1>
+      <h3>(Use headphones for a better experience)</h3>
+        <audio controls>
+           <source src = "/assets/mornings.mp3" type = "audio/mpeg">
+        </audio>
   </div>
  
   <footer>
